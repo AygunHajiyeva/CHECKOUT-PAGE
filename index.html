@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-check</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/images/devchallenges.png" type="image/x-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/f79ddec6d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Checkout</h1>
+
+      <!-------- CART -------->
+      <main>
+        <section class="card">
+          <div class="product">
+            <img src="/images/photo1.png" alt="bag" />
+            <div class="detail">
+              <p class="product-name">Vintage Backbag</p>
+              <div class="price">
+                <p>$54.99</p>
+                <p><s>$94.99</s></p>
+              </div>
+              <div class="counter">
+                <div class="op minus1">-</div>
+                <p class="p1">0</p>
+                <div class="op plus1">+</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/photo2.png" alt="shoes" />
+            <div class="detail">
+              <p class="product-name">Levi Shoes</p>
+              <div class="price">
+                <p>$74.99</p>
+                <p><s>$124.99</s></p>
+              </div>
+              <div class="counter">
+                <div class="op minus2">-</div>
+                <p class="p2">0</p>
+                <div class="op plus2">+</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cost">
+            <div class="shipping">
+              <h4 class="title">Shipping</h4>
+              <h4 class="cost-value shipping-cost">$19</h4>
+            </div>
+
+            <div class="total">
+              <h4 class="title">Total</h4>
+              <h4 class="cost-value total-cost">$0</h4>
+            </div>
+          </div>
+        </section>
+
+        <!----------- FORM ------------>
+        <form action="#">
+          <fieldset class="contac">
+            <legend>Contact Information</legend>
+            <label for="email"
+              >E-mail
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+                required
+              />
+            </label>
+            <label for="phone">
+              Phone
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+                required
+              />
+            </label>
+          </fieldset>
+
+          <fieldset class="shipping-address">
+            <legend>Shipping Adress</legend>
+            <label for="name">
+              Full name
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Rodney Cotton"
+                required
+              />
+            </label>
+
+            <label for="address">
+              Address
+              <i class="fa-solid fa-house"></i>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Your address..."
+                required
+              />
+            </label>
+
+            <label for="city"
+              >City
+              <i class="fa-solid fa-city"></i>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your city..."
+                required
+              />
+            </label>
+            <div class="small">
+              <label class="country-label" for="country"
+                >Country
+                <i class="fa-solid fa-earth-asia"></i>
+                <select name="country" id="country" required>
+                  <option value="" disabled selected>Your country...</option>
+                  <option value="aze">Azerbaijan</option>
+                  <option value="turk">Turkey</option>
+                  <option value="sin">Singapur</option>
+                  <option value="ger">Germany</option>
+                </select></label
+              >
+              <label class="postal-label" for="code"
+                >Postal code
+                <i class="fa-solid fa-envelopes-bulk"></i>
+                <input
+                  type="text"
+                  name="code"
+                  id="code"
+                  placeholder="Your postal code..."
+                  required
+                />
+              </label>
+            </div>
+          </fieldset>
+          <label for="check" id="checkbox">
+            <input type="checkbox" name="check" id="check" />Save your
+            information for the next time
+          </label>
+
+          <button class="btn" type="submit">Continue</button>
+        </form>
+      </main>
+
+      <!-- ---------- FOOTER ---------- -->
+      <footer>
+        <p>
+          created by
+          <a href="https://github.com/AygunHajiyeva">@AygunHajiyeva</a> -
+          devChallenges.io
+        </p>
+      </footer>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
